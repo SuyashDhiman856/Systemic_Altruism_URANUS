@@ -1,4 +1,5 @@
 import React from "react";
+import Screenshot from './screenshot.png';
 
 export default function Content(props) {
   // let d = document, t="script",o = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -7,7 +8,7 @@ export default function Content(props) {
   return (
     <>
       <div className="main-content">
-        <h2 className="text-secondary" ref={props.paragraphRef}>Introduction to $URANUS Token</h2>
+        <h2 className="content-heading text-primary" ref={props.paragraphRef}>Introduction to $URANUS Token</h2>
         <br />
         <p ref={props.paragraphRef}>
           Welcome to the cosmic realm of $URANUS Token, where the fusion of
@@ -19,10 +20,12 @@ export default function Content(props) {
           and the decentralized revolution.
         </p>
         <br/>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/gI7qfHuLQ6Q?si=vCwS1QoZS7-MOZvH" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <img className="screenshot" src={Screenshot}/>
+        <br/>
+        <iframe className="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/gI7qfHuLQ6Q?si=vCwS1QoZS7-MOZvH" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         <br />
         <br/>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/-KJZCYW_pN8?si=ziBzh2S1D3SB5ZlW" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <iframe className="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/-KJZCYW_pN8?si=ziBzh2S1D3SB5ZlW" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         <br/>
         <br/>
         <p ref={props.paragraphRef}>
@@ -49,7 +52,7 @@ export default function Content(props) {
           data-stats="USD"
         ></div>
         <br />
-        <h2 className="text-secondary" ref={props.paragraphRef}>Vision and Mission</h2>
+        <h2 className="content-heading text-primary" ref={props.paragraphRef}>Vision and Mission</h2>
         <br />
         <p ref={props.paragraphRef}>
           Our vision at $URANUS Token is as expansive as the cosmos itself. We
@@ -67,14 +70,14 @@ export default function Content(props) {
           of our community, we aim to rewrite the rules of finance and pave the
           way for a more inclusive and equitable future.
         </p>
-        <h2 className="text-secondary" ref={props.paragraphRef}>Key Features</h2>
+        <h2 className="content-heading text-primary" ref={props.paragraphRef}>Key Features</h2>
         <br />
         <p ref={props.paragraphRef}>
           $URANUS distinguishes itself through a myriad of key features designed
           to enhance security, scalability, and interoperability:
           <br />
           <br />
-          <strong className="text-secondary" ref={props.paragraphRef}>Security:</strong>
+          <strong className="text-primary" ref={props.paragraphRef}>Security:</strong>
           Built on a robust blockchain infrastructure utilizing cutting-edge
           encryption and consensus mechanisms, $URANUS prioritizes the security
           of user assets and data. Our platform employs rigorous security
@@ -82,7 +85,7 @@ export default function Content(props) {
           integrity of transactions within the network.
           <br />
           <br />
-          <strong className="text-secondary" ref={props.paragraphRef}>Decentralization:</strong>
+          <strong className="text-primary" ref={props.paragraphRef}>Decentralization:</strong>
           $URANUS operates on a decentralized network, eliminating the need for
           intermediaries and centralized control. By decentralizing authority,
           $URANUS ensures censorship resistance, immutability, and transparency,
@@ -90,7 +93,7 @@ export default function Content(props) {
           of traditional financial systems.
           <br />
           <br />
-          <strong className="text-secondary" ref={props.paragraphRef}>Scalability:</strong>
+          <strong className="text-primary" ref={props.paragraphRef}>Scalability:</strong>
           With a scalable architecture, $URANUS can accommodate a high volume of
           transactions with minimal latency, ensuring fast and efficient
           processing for users worldwide. Our platform is designed to scale
@@ -98,14 +101,14 @@ export default function Content(props) {
           without compromising on performance or reliability.
           <br />
           <br />
-          <strong className="text-secondary" ref={props.paragraphRef}>Privacy:</strong>
+          <strong className="text-primary" ref={props.paragraphRef}>Privacy:</strong>
           $URANUS prioritizes user privacy and anonymity, offering optional
           privacy features to protect sensitive information. Through advanced
           cryptographic techniques, users can transact with confidence, knowing
           that their financial data remains secure and confidential.
           <br />
           <br />
-          <strong className="text-secondary" ref={props.paragraphRef}>Community Governance:</strong>
+          <strong className="text-primary" ref={props.paragraphRef}>Community Governance:</strong>
           $URANUS operates on a community-driven governance model, empowering
           token holders to participate in decision-making processes regarding
           protocol upgrades, development initiatives, and resource allocation.
@@ -113,7 +116,7 @@ export default function Content(props) {
           are represented and respected.
           <br />
           <br />
-          <strong className="text-secondary" ref={props.paragraphRef}>Interoperability:</strong>
+          <strong className="text-primary" ref={props.paragraphRef}>Interoperability:</strong>
           $URANUS is interoperable with other blockchain networks and
           cryptocurrencies, facilitating seamless cross-chain transactions and
           fostering collaboration within the broader blockchain ecosystem. Our
@@ -121,7 +124,7 @@ export default function Content(props) {
           with various decentralized applications and protocols.
         </p>
         <br />
-        <h2 className="text-secondary">Tokenomics</h2>
+        <h2 className="content-heading text-primary">Tokenomics</h2>
         <br />
         <p>
           $URANUS Tokenomics are designed to promote stability, incentivize
@@ -134,25 +137,25 @@ export default function Content(props) {
           <br />
           <ul>
             <li>
-              <strong className="text-secondary text-decoration-underline">Total Supply:</strong> X tokens
+              <strong className="text-primary text-decoration-underline">Total Supply:</strong> X tokens
             </li>
             <br />
             <li>
-              <strong className="text-secondary text-decoration-underline">Initial Distribution:</strong> Initial distribution plan
+              <strong className="text-primary text-decoration-underline">Initial Distribution:</strong> Initial distribution plan
             </li>
             <br />
             <li>
-              <strong className="text-secondary text-decoration-underline">Deflationary Mechanism:</strong> Details of token burning
+              <strong className="text-primary text-decoration-underline">Deflationary Mechanism:</strong> Details of token burning
               or redistribution mechanisms
             </li>
             <br />
             <li>
-              <strong  className="text-secondary text-decoration-underline">Token Allocation:</strong> Allocation for liquidity,
+              <strong  className="text-primary text-decoration-underline">Token Allocation:</strong> Allocation for liquidity,
               community rewards, development, and marketing
             </li>
           </ul>
         </p>
-        <h2 className="text-secondary">Roadmap</h2>
+        <h2 className="content-heading text-primary">Roadmap</h2>
         <br />
         <p>
           Our roadmap outlines our vision for the future and the key milestones
@@ -163,30 +166,30 @@ export default function Content(props) {
         <br />
         <ul>
           <li>
-            <strong className="text-secondary text-decoration-underline">Community Growth:</strong> Expand our community through
+            <strong className="text-primary text-decoration-underline">Community Growth:</strong> Expand our community through
             marketing efforts, partnerships, and community engagement
             initiatives.
           </li>
           <br />
           <li>
-            <strong className="text-secondary text-decoration-underline">Platform Development:</strong> Develop and launch new
+            <strong className="text-primary text-decoration-underline">Platform Development:</strong> Develop and launch new
             features and products to enhance the $URANUS experience and provide
             additional utility for our token.
           </li>
           <br />
           <li>
-            <strong className="text-secondary text-decoration-underline">Strategic Partnerships:</strong> Form partnerships with
+            <strong className="text-primary text-decoration-underline">Strategic Partnerships:</strong> Form partnerships with
             other projects, influencers, and organizations to increase
             visibility and adoption of $URANUS Token.
           </li>
           <br />
           <li>
-            <strong className="text-secondary text-decoration-underline">Ecosystem Expansion:</strong> Explore opportunities to
+            <strong className="text-primary text-decoration-underline">Ecosystem Expansion:</strong> Explore opportunities to
             expand the $URANUS ecosystem and integrate with other platforms and
             protocols.
           </li>
         </ul>
-        <h2 className="text-secondary">How to Buy $URANUS</h2>
+        <h2 className="content-heading text-primary">How to Buy $URANUS</h2>
         <br />
         <p>
           Purchasing $URANUS Tokens is a straightforward process, designed to be
@@ -196,7 +199,7 @@ export default function Content(props) {
         <br />
         <ul>
           <li>
-            <strong className="text-secondary text-decoration-underline">Set Up a Wallet:</strong> Before you can buy $URANUS Tokens,
+            <strong className="text-primary text-decoration-underline">Set Up a Wallet:</strong> Before you can buy $URANUS Tokens,
             you'll need to have a cryptocurrency wallet that supports Binance
             Smart Chain (BSC) tokens. Popular options include MetaMask, Trust
             Wallet, and Binance Chain Wallet. Make sure to securely store your
@@ -204,7 +207,7 @@ export default function Content(props) {
           </li>
           <br />
           <li>
-            <strong className="text-secondary text-decoration-underline">Acquire BNB (Binance Coin):</strong> $URANUS Tokens are
+            <strong className="text-primary text-decoration-underline">Acquire BNB (Binance Coin):</strong> $URANUS Tokens are
             typically purchased using Binance Coin (BNB), the native
             cryptocurrency of the Binance Smart Chain. If you don't already have
             BNB in your wallet, you'll need to acquire some from a
@@ -213,7 +216,7 @@ export default function Content(props) {
           </li>
           <br />
           <li>
-            <strong className="text-secondary text-decoration-underline">Connect to a Decentralized Exchange (DEX):</strong> $URANUS
+            <strong className="text-primary text-decoration-underline">Connect to a Decentralized Exchange (DEX):</strong> $URANUS
             Tokens are available for trading on decentralized exchanges (DEXs)
             that support the Binance Smart Chain, such as PancakeSwap. Access
             PancakeSwap or your preferred DEX through your wallet's browser
@@ -221,14 +224,14 @@ export default function Content(props) {
           </li>
           <br />
           <li>
-            <strong className="text-secondary text-decoration-underline">Navigate to the $URANUS Token Pair:</strong> Once you've
+            <strong className="text-primary text-decoration-underline">Navigate to the $URANUS Token Pair:</strong> Once you've
             accessed the DEX, navigate to the trading pair for $URANUS Tokens.
             This typically involves selecting the correct token contract address
             for $URANUS and pairing it with BNB.
           </li>
           <br />
           <li>
-            <strong className="text-secondary text-decoration-underline">Set Your Slippage Tolerance:</strong> Slippage refers to the
+            <strong className="text-primary text-decoration-underline">Set Your Slippage Tolerance:</strong> Slippage refers to the
             difference between the expected price of a trade and the price at
             which the trade is executed. To ensure your transaction goes through
             smoothly, set an appropriate slippage tolerance. The recommended
@@ -237,28 +240,28 @@ export default function Content(props) {
           </li>
           <br />
           <li>
-            <strong className="text-secondary text-decoration-underline">Enter the Amount:</strong> Specify the amount of BNB you
+            <strong className="text-primary text-decoration-underline">Enter the Amount:</strong> Specify the amount of BNB you
             wish to swap for $URANUS Tokens. Double-check the transaction
             details, including the estimated price and the amount of $URANUS
             Tokens you'll receive.
           </li>
           <br />
           <li>
-            <strong className="text-secondary text-decoration-underline">Confirm the Transaction:</strong> Once you've reviewed and
+            <strong className="text-primary text-decoration-underline">Confirm the Transaction:</strong> Once you've reviewed and
             confirmed the transaction details, proceed to confirm the swap. Your
             wallet may prompt you to approve the transaction and sign it with
             your private key or biometric authentication.
           </li>
           <br />
           <li>
-            <strong className="text-secondary text-decoration-underline">Wait for Confirmation:</strong> After confirming the
+            <strong className="text-primary text-decoration-underline">Wait for Confirmation:</strong> After confirming the
             transaction, wait for it to be processed and confirmed on the
             blockchain. This typically takes a few moments but may vary
             depending on network congestion.
           </li>
           <br />
           <li>
-            <strong className="text-secondary text-decoration-underline">View Your $URANUS Token Balance:</strong> Once the
+            <strong className="text-primary text-decoration-underline">View Your $URANUS Token Balance:</strong> Once the
             transaction is confirmed, you should see your $URANUS Token balance
             reflected in your wallet. You can now hold onto your tokens, stake
             them, or participate in other activities within the $URANUS
@@ -266,7 +269,7 @@ export default function Content(props) {
           </li>
           <br />
           <li>
-            <strong className="text-secondary text-decoration-underline">Optional:</strong> Add $URANUS Token to Your Wallet: If
+            <strong className="text-primary text-decoration-underline">Optional:</strong> Add $URANUS Token to Your Wallet: If
             $URANUS Tokens don't automatically appear in your wallet, you may
             need to manually add them by entering the token contract address.
             This ensures that you can easily view and manage your $URANUS Tokens
@@ -274,7 +277,7 @@ export default function Content(props) {
           </li>
           <br />
         </ul>
-        <h2 className="text-secondary">Safety Disclaimer</h2>
+        <h2 className="content-heading text-primary">Safety Disclaimer</h2>
         <br />
         <p>
           While $URANUS Token strives to provide a secure and transparent
@@ -283,7 +286,7 @@ export default function Content(props) {
           tolerance, and consult with a financial advisor before making any
           investment decisions.
         </p>
-        <h2 className="text-secondary">Token Utility</h2>
+        <h2 className="content-heading text-primary">Token Utility</h2>
         <br />
         <p>
           $URANUS Token serves as the backbone of our ecosystem, enabling
@@ -299,10 +302,12 @@ export default function Content(props) {
           for the stars and beyond!
         </p>
         <br/>
-        <h2 className="text-secondary">Elon sues OpenAI, Apple's decline, TikTok ban, Bitcoin $100K?, Science corner: Microplastics</h2>
+        <h2 className="content-heading text-primary">Elon sues OpenAI, Apple's decline, TikTok ban, Bitcoin $100K?, Science corner: Microplastics</h2>
         <br/>
         <p className="blockquote-footer">BY ALL-IN PODCAST</p>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/snbTCWL6rxo?si=8nV2Sgb3RZ85XDBi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe className="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/snbTCWL6rxo?si=8nV2Sgb3RZ85XDBi" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <br/>
+        <br/>
       </div>
       <div
         id="coinmarketcap-widget-coin-price-block"

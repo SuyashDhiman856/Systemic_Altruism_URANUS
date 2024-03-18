@@ -8,7 +8,7 @@ import lightMode from './day-mode.png';
 export default function Navbar(props) {
   return (
     <>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme={props.theme}>
+    <nav style={{backgroundColor: props.theme === "light" ? "#4d79ff" : "#00004d"}} className="navbar navbar-expand-lg" data-bs-theme="dark">
   <div className="container-fluid">
     <a className="navbar-brand" href="#"><img className="navbar-logo" src={logo}/></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,11 +21,11 @@ export default function Navbar(props) {
         </li>
       </ul>
       <div className="navbar-theme-logo">
-      <label>Enable {props.theme === "light" ? "Dark" : "Light"} Mode</label><img onClick={props.toggleTheme} className="theme-logo" src={props.theme === "light" ? darkMode : lightMode}/>
+      <label style={{color : "white"}}>Enable {props.theme === "light" ? "Dark" : "Light"} Mode</label><img onClick={props.toggleTheme} className="theme-logo" src={props.theme === "light" ? darkMode : lightMode}/>
       </div>
       <form className="d-flex" role="search">
-        <input className="form-control me-2" id="navbar-input" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-secondary" type="submit">Search</button>
+        <input style={{backgroundColor: props.theme === "light" ? "#00004d" : "#4d79ff"}} className="form-control me-2" id="navbar-input" type="search" placeholder="Search" aria-label="Search"/>
+        <button style={{backgroundColor: props.theme === "light" ? "#00004d" : "#4d79ff", color: props.theme === "light" ? "#4d79ff" : "#00004d"}} className="btn btn-outline-primary" type="submit">Search</button>
       </form>
     </div>
   </div>

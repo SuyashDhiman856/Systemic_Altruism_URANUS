@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
-// import UranusData from './components/UranusData';
 import FAQ from './components/FAQ';
 
 function App() {
@@ -27,9 +26,8 @@ function App() {
     <>
     <Navbar title="$URANUS" theme={theme} toggleTheme={toggleTheme}/>
     <Header/>
-    {/* <UranusData/> */}
     <Content/>
-    <FAQ/>
+    <FAQ theme={theme}/>
     <Footer theme={theme}/>
     </>
   );
