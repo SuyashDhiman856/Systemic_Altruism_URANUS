@@ -1,3 +1,9 @@
+body p {
+  font-family: "Mallanna", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,192 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar-logo{
+  border-radius: 50%;
+  width: 25px;
+  padding-bottom: 6px;
+}
+
+@media screen and (min-width: 890px){ 
+.header-image{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.main-container{
+  width: 45%;
+  margin: 0 auto;
+}
+
+.main-content{
+  width: 45%;
+  margin: 0 auto;
+}
+
+.theme-logo{
+  padding-left: 10px;
+  width: 40px;
+}
+
+.FAQ{
+  width: 45%;
+  margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 890px){
+  .header-image{
+    width: 100%;
+   height: 400px;
+   object-fit: cover;
+  }
+  .main-container{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .main-content{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .FAQ{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .theme-logo{
+    margin-bottom: 10px;
+    width: 40px;
+  }
+
+}
+
+@media screen and (max-width: 540px){
+.header-image{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 70px;
+}
+}
+
+
+@media screen and (min-width: 300px){
+.social-media p{
+  padding: 25px 0;
+}
+
+.social-media li{
+  list-style-type: none;
+  float: inline-start;
+  padding-right: 20px;
+}
+
+.social-media a{
+  text-decoration: none;
+}
+
+.social-media img{
+  width: 30px;
+}
+
+}
+
+@media screen and (max-width: 300px){
+  .social-media p{
+    padding: 25px 0;
+  }
+  
+  .social-media li{
+    list-style-type: none;
+  }
+  
+  .social-media a{
+    text-decoration: none;
+  }
+  
+  .social-media img{
+    width: 30px;
+  }
+  }
+
+@media screen and (min-width : 545px){
+  .social-media p{
+    padding: 25px 0;
+  }
+  
+  .social-media li{
+    list-style-type: none;
+    float: inline-start;
+    padding-right: 20px;
+  }
+  
+  .social-media a{
+    text-decoration: none;
+  }
+  
+  .social-media img{
+    width: 30px;
+  }
+}
+
+.header-logo{
+  margin-top: 20px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.footer{
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.left-list p, .right-list p{
+  margin-top: 24px;
+  margin-left : 10px;
+}
+
+.left-list ul, .right-list ul{
+  /* padding-bottom: 100px; */
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+
+.left-list ul li, .right-list ul li{
+  padding-top: 20px;
+}
+
+.left-list ul li a, .right-list ul li a{
+  text-decoration: none;
+}
+
+.theme-logo{
+  padding-left: 10px;
+  width: 40px;
+}
+
+.navbar-theme-logo{
+  padding-right: 20px;
+}
+
+.social-media{
+  text-align: center;
+}
+
+.social-media ul{
+  display: table;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.strong{
+  font-weight: bold;
+  color: red;
 }
