@@ -2,8 +2,6 @@ import React from "react";
 import Screenshot from "./screenshot.png";
 
 export default function Content(props) {
-  // let d = document, t="script",o = d.createElement(t), s = d.getElementsByTagName(t)[0];
-  // o.src="https://wazirx.com/blog/wp-content/plugins/wx-iframe-widgets/public/js/wx-widgets.js?ver=1.0.1", o.addEventListener("load",function(){wxPriceChart({referral_code: document.querySelector('#wx-price-chart').dataset.referral_code}).render("#wx-price-chart")}, !1), s.parentNode.insertBefore(o, s);
 
   return (
     <>

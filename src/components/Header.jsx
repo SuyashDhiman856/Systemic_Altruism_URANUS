@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.png";
 import containerImage from "./containerImage.jpeg";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <>
       <div
@@ -12,9 +12,19 @@ export default function Header() {
         data-coin-ids="20371,1,166,136,382,1986,20,1120,440,29"
       ></div>
       <div className="header">
+      <div style={{display : props.alert.display}} id="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>{props.theme === "light" ? "Light" : "Dark"} Mode</strong> Enabled on the  Website.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
         <div className="child">
-        <h1 className="header-heading">In Crypto We Trust, But In Uranus, We Believe!</h1>
-        <p className="header-paragraph">Uranus is the best Meme Token exist in the market which is a lot stable than others and a lot better futures aspects with a lot of potential</p>
+          <h1 className="header-heading">
+            In Crypto We Trust, But In Uranus, We Believe!
+          </h1>
+          <p className="header-paragraph">
+            Uranus is the best Meme Token exist in the market which is a lot
+            stable than others and a lot better futures aspects with a lot of
+            potential
+          </p>
         </div>
       </div>
       <div className="main-container">
