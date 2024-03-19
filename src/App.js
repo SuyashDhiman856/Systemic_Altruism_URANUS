@@ -43,7 +43,7 @@ function App() {
 
   return (
     <>
-    <Navbar title="$URANUS" theme={theme} toggleTheme={toggleTheme}/>
+    <Navbar title="URANUS" theme={theme} toggleTheme={toggleTheme}/>
     <Header alert={alert} theme={theme}/>
     <Content/>
     <FAQ theme={theme}/>
