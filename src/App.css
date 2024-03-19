@@ -58,11 +58,11 @@ body p {
 
 /* CSS for >890px width size of the screen */
 @media screen and (min-width: 890px){ 
-/* .header-image{
+
+  
+#dextools-widget{
   width: 100%;
-  height: 670px;
-  object-fit: cover;
-} */
+}
 
 .header{
   position: relative;
