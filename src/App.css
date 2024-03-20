@@ -262,7 +262,6 @@ body p {
 .header-logo{
   display: block;
   margin: 20px auto;
-  /* margin-top: 20px; */
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -315,7 +314,6 @@ body p {
 }
 
 .left-list ul, .right-list ul{
-  /* padding-bottom: 100px; */
   list-style-type: none;
   padding-top: 20px;
   padding-bottom: 120px;
@@ -365,24 +363,11 @@ body p {
 .header-paragraph{
   font-weight: bold;
 }
-
-/* .child h1:last-of-type{
-  animation: type 0.33s infinite
-}
-
-@keyframes type{
- to {opacity: .0;}
-} */
  
  @keyframes display{
   from {display: block;}
   to {display: none;}
 }
-/*
-#alert{
-  animation-name: display;
-  animation-duration: 1s;
-} */
 
 #hoverme {
   background: #70c48f;
@@ -410,11 +395,6 @@ body p {
   left: -200px;
 }
 
-/*#notif {
-  left: 10px;
-  opacity: 0;
-}*/
-
 @keyframes movein {
   from { left: -200px; }
   to   { left: 10px; }
@@ -423,4 +403,18 @@ body p {
 @keyframes moveout {
   from { left: 10px; }
   to   { left: -200px; }
+}
+
+.preloader-container{
+  width: 100%;
+  height: 100vh;
+}
+
+.preloader{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto
 }

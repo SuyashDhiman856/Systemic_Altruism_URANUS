@@ -8,7 +8,7 @@ import lightMode from './day-mode.png';
 export default function Navbar(props) {
   return (
     <>
-    <nav style={{backgroundColor: props.theme === "light" ? "#4d79ff" : "#00004d"}} className="navbar navbar-expand-lg" data-bs-theme="dark">
+    <nav style={{backgroundColor: props.theme === "light" ? "#4d79ff" : "#00004d", display: props.display === "block" ? "block" : "none"}} className="navbar navbar-expand-lg" data-bs-theme="dark">
   <div className="container-fluid">
     <a className="navbar-brand" href="#"><img className="navbar-logo" src={logo}/></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@ export default function Navbar(props) {
 }
 
 Navbar.propTypes = {
-  title: PropTypes.string.isRequired,//If defaultProps and props do not passed by the user then error will occur. Value should not be undefined.
+  title: PropTypes.string.isRequired,
   theme: PropTypes.string.isRequired
 }
 

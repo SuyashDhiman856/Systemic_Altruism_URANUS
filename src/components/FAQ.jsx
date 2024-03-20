@@ -2,15 +2,8 @@ import React from "react";
 
 export default function FAQ(props) {
 
-//   var button = document.getElementById('hoverme');
-// var slideout = document.getElementById('notif');
-
-// button.onclick = function() {
-//   slideout.classList.toggle('visible');
-// };
-
   return (
-    <form className="FAQ">
+    <form style={{display: props.display === "block" ? "block" : "none"}} className="FAQ">
       <h2 className="content-heading text-primary">FAQ Section</h2>
       <br />
       <div className="form-group">
@@ -39,10 +32,6 @@ export default function FAQ(props) {
       >
         Submit
       </button>
-      {/* <div style={{display : props.alert.display}} id="notif" class="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>Submitted...</strong>
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div> */}
     </form>
   );
 }

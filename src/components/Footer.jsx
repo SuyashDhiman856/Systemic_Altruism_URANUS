@@ -12,8 +12,7 @@ export default function Footer(props) {
 
     return (
       <>
-      <div className="footer" style={{backgroundColor: props.theme === 'light' ? '#f0f0f5' : '#000033'}}>
-        {/* <li className="row"> */}
+      <div className="footer" style={{backgroundColor: props.theme === 'light' ? '#f0f0f5' : '#000033', display: props.display === "block" ? "block" : "none"}}>
         <div className="upper-footer">
             <div className="left-list" style={{borderRight : props.theme === "light" ? "black solid 1px" : "grey solid 1px", borderBottom : props.theme === "light" ? "black solid 1px" : "grey solid 1px"}}>
             <p style={{color: props.theme === 'light' ? 'black' : 'white'}}>Partners</p>
@@ -32,7 +31,6 @@ export default function Footer(props) {
             </div>
             </div>
 
-            {/* </li> */}
         <div className="social-media">
                 <p style={{color: props.theme === 'light' ? 'black' : 'white'}}>Social Media</p>
                 <ul>

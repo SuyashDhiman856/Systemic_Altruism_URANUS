@@ -5,15 +5,19 @@ import Header from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
 import FAQ from './components/FAQ';
+import Preloader from './components/preloader'
 
 function App() {
   const [theme, setTheme] = useState("light");
-  const [alert, setAlert] = useState({display : "none"});
+  const [alert, setAlert] = useState("none");
+  const [display, setDisplay] = useState("none");
+
+  window.onload = function(){
+    setDisplay("block");
+  }
 
  const toggleDisplay = () => {
   setAlert({display : "none"});
-  // document.getElementById("alert").style.animationName = "display";
-  // document.getElementById("alert").style.animationDuration = "1s";
  }
 
   const toggleTheme = () => {
@@ -21,9 +25,7 @@ function App() {
       setTheme("dark");
       document.body.style.color = "white";
       document.body.style.backgroundColor = "#00001a";
-      setAlert({display : "block"})
-      // document.getElementById("alert").style.display = alert.display;
-      // console.log(document.getElementById("alert").style.display);
+      setAlert("block");
       setInterval(() => {
         toggleDisplay();
       }, 2000);
@@ -32,9 +34,7 @@ function App() {
       setTheme("light");
       document.body.style.color = "black";
       document.body.style.backgroundColor = "white";
-      setAlert({display : "block"})
-      // document.getElementById("alert").style.display = alert.display;
-      // console.log(document.getElementById("alert").style.display);
+      setAlert("block")
       setInterval(() => {
         toggleDisplay();
       }, 2000);
@@ -43,11 +43,12 @@ function App() {
 
   return (
     <>
-    <Navbar title="URANUS" theme={theme} toggleTheme={toggleTheme}/>
-    <Header alert={alert} theme={theme}/>
-    <Content/>
-    <FAQ theme={theme}/>
-    <Footer theme={theme}/>
+    <Navbar display={display} title="URANUS" theme={theme} toggleTheme={toggleTheme}/>
+    <Preloader display={display}/>
+    <Header display={display} alert={alert} theme={theme}/>
+    <Content display={display}/>
+    <FAQ display={display} theme={theme}/>
+    <Footer display={display} theme={theme}/>
     </>
   );
   }

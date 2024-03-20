@@ -5,7 +5,7 @@ export default function Content(props) {
 
   return (
     <>
-      <div className="main-content">
+      <div style={{display: props.display === "block" ? "block" : "none"}} className="main-content">
         <h2 className="content-heading text-primary" ref={props.paragraphRef}>
           Introduction to URANUS Token
         </h2>
@@ -260,103 +260,72 @@ export default function Content(props) {
         <ul>
           <li>
             <strong className="text-primary text-decoration-underline">
-              Set Up a Wallet:
+            Research and Understanding:
             </strong>{" "}
-            Before you can buy URANUS Tokens, you'll need to have a
-            cryptocurrency wallet that supports Binance Smart Chain (BSC)
-            tokens. Popular options include MetaMask, Trust Wallet, and Binance
-            Chain Wallet. Make sure to securely store your wallet's seed phrase
-            and private keys.
+            Begin by immersing yourself in thorough research about URANUS (Uranus Meme Token). Delve into its purpose, community engagement, and the associated risks that come with investing in meme tokens. Understanding these facets will empower you to make informed decisions.
           </li>
           <br />
           <li>
             <strong className="text-primary text-decoration-underline">
-              Acquire BNB (Binance Coin):
+            Select a Reliable Exchange:
             </strong>{" "}
-            URANUS Tokens are typically purchased using Binance Coin (BNB), the
-            native cryptocurrency of the Binance Smart Chain. If you don't
-            already have BNB in your wallet, you'll need to acquire some from a
-            cryptocurrency exchange such as Binance or a peer-to-peer trading
-            platform.
+            Opt for a reputable cryptocurrency exchange that supports URANUS trading pairs. Prioritize platforms known for their robust security measures and user-friendly interfaces, ensuring a smooth and secure transaction experience.
           </li>
           <br />
           <li>
             <strong className="text-primary text-decoration-underline">
-              Connect to a Decentralized Exchange (DEX):
+            Create an Account:
             </strong>{" "}
-            URANUS Tokens are available for trading on decentralized exchanges
-            (DEXs) that support the Binance Smart Chain, such as PancakeSwap.
-            Access PancakeSwap or your preferred DEX through your wallet's
-            browser extension or app.
+            Take the necessary steps to create an account on your chosen exchange. This typically involves completing verification procedures, including identity authentication, to comply with regulatory standards and gain access to trading functionalities.
           </li>
           <br />
           <li>
             <strong className="text-primary text-decoration-underline">
-              Navigate to the URANUS Token Pair:
+            Deposit Funds:
             </strong>{" "}
-            Once you've accessed the DEX, navigate to the trading pair for
-            URANUS Tokens. This typically involves selecting the correct token
-            contract address for URANUS and pairing it with BNB.
+            Once your account is set up, proceed to deposit funds into it. Utilize supported deposit methods such as bank transfers, credit/debit cards, or other cryptocurrencies to ensure you have the necessary balance for purchasing URANUS.
           </li>
           <br />
           <li>
             <strong className="text-primary text-decoration-underline">
-              Set Your Slippage Tolerance:
+            Find URANUS Pair:
             </strong>{" "}
-            Slippage refers to the difference between the expected price of a
-            trade and the price at which the trade is executed. To ensure your
-            transaction goes through smoothly, set an appropriate slippage
-            tolerance. The recommended slippage tolerance for URANUS Token
-            transactions may vary but is typically between 5% and 12%.
+            Navigate through the exchange's trading section to locate URANUS trading pairs. These are commonly denoted as URANUS/USDT or URANUS/BTC, simplifying the process of finding and trading URANUS.
           </li>
           <br />
           <li>
             <strong className="text-primary text-decoration-underline">
-              Enter the Amount:
+            Place Order:
             </strong>{" "}
-            Specify the amount of BNB you wish to swap for URANUS Tokens.
-            Double-check the transaction details, including the estimated price
-            and the amount of URANUS Tokens you'll receive.
+            Determine the type of order you wish to place based on your preferences and market conditions. You can opt for a market order, which executes immediately at the current market price, or a limit order, where you set a specific price for execution.
           </li>
           <br />
           <li>
             <strong className="text-primary text-decoration-underline">
-              Confirm the Transaction:
+            Review Order:
             </strong>{" "}
-            Once you've reviewed and confirmed the transaction details, proceed
-            to confirm the swap. Your wallet may prompt you to approve the
-            transaction and sign it with your private key or biometric
-            authentication.
+            Before finalizing your order, meticulously review all the details to ensure accuracy. Verify the quantity of URANUS you're purchasing and double-check the purchase price to avoid any discrepancies.
           </li>
           <br />
           <li>
             <strong className="text-primary text-decoration-underline">
-              Wait for Confirmation:
+            Execute Trade:
             </strong>{" "}
-            After confirming the transaction, wait for it to be processed and
-            confirmed on the blockchain. This typically takes a few moments but
-            may vary depending on network congestion.
+            Once you're satisfied with the order details, proceed to execute the trade. Your order will be processed swiftly, and you'll soon acquire URANUS tokens, which will reflect in your exchange wallet.
           </li>
           <br />
           <li>
             <strong className="text-primary text-decoration-underline">
-              View Your URANUS Token Balance:
+            Secure Your Tokens:
             </strong>{" "}
-            Once the transaction is confirmed, you should see your URANUS Token
-            balance reflected in your wallet. You can now hold onto your tokens,
-            stake them, or participate in other activities within the URANUS
-            ecosystem.
+            Enhance the security of your URANUS holdings by transferring them to a secure wallet post-purchase. Consider utilizing hardware wallets or reputable software wallets to safeguard your assets against potential risks.
           </li>
           <br />
           <li>
             <strong className="text-primary text-decoration-underline">
-              Optional:
+            Stay Informed and Monitor:
             </strong>{" "}
-            Add URANUS Token to Your Wallet: If URANUS Tokens don't
-            automatically appear in your wallet, you may need to manually add
-            them by entering the token contract address. This ensures that you
-            can easily view and manage your URANUS Tokens alongside your other
-            assets.
+            Stay abreast of the latest developments and trends related to URANUS and the broader cryptocurrency market. Regularly monitor your investment to stay informed and be prepared to adjust your strategies accordingly for optimal outcomes.
           </li>
           <br />
         </ul>
@@ -386,11 +355,10 @@ export default function Content(props) {
         </p>
         <br />
         <h2 className="content-heading text-primary">
-          Elon sues OpenAI, Apple's decline, TikTok ban, Bitcoin $100K?, Science
-          corner: Microplastics
+        All In On Uranus 
         </h2>
         <br />
-        <p className="blockquote-footer">BY ALL-IN PODCAST</p>
+        <p className="blockquote-footer text-center">BY ALL-IN PODCAST</p>
         <iframe
           className="youtube-video"
           width="560"
@@ -412,8 +380,6 @@ export default function Content(props) {
         transparent="true"
         show-symbol-logo="true"
       ></div>
-
-      {/* <div data-referral_code="YOUR_REFERRAL_CODE" id="wx-price-chart"></div> */}
     </>
   );
 }

@@ -1,21 +1,14 @@
 import React from "react";
 import logo from "./logo.png";
-import containerImage from "./containerImage.jpeg";
 
 export default function Header(props) {
   return (
-    <>
-      <div
-        id="crypto-widget-CoinMarquee"
-        data-transparent="true"
-        data-design="classic"
-        data-coin-ids="20371,1,166,136,382,1986,20,1120,440,29"
-      ></div>
+    <div style={{display: props.display === "block" ? "block" : "none"}}>
       <div className="header">
-      <div style={{display : props.alert.display}} id="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+      <div style={{display : props.alert}} id="alert" class="alert alert-success alert-dismissible fade show" role="alert">
   <strong>{props.theme === "light" ? "Light" : "Dark"} Mode</strong> Enabled on the  Website.
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
+  </div>
         <div className="child">
           <h1 className="header-heading">
             In Crypto We Trust, But In Uranus, We Believe!
@@ -30,6 +23,6 @@ export default function Header(props) {
       <div className="main-container">
         <img className="header-logo" src={logo} />
       </div>
-    </>
+    </div>
   );
 }
