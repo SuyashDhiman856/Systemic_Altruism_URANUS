@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
 import FAQ from './components/FAQ';
-// import Preloader from './components/preloader
+import Preloader from './components/preloader';
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -44,7 +44,7 @@ function App() {
   return (
     <>
     <Navbar display={display} title="URANUS" theme={theme} toggleTheme={toggleTheme}/>
-    {/* <Preloader display={display}/> */}
+    <Preloader display={display}/>
     <Header display={display} alert={alert} theme={theme}/>
     <Content display={display}/>
     <FAQ display={display} theme={theme}/>
